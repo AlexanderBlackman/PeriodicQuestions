@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "PeriodicQuestions (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "PeriodicQuestions (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
