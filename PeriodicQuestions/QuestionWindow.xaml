@@ -8,8 +8,37 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid>
-        <TextBlock Text="This is a question window"
-                   FontSize="70"/>
-    </Grid>
+    <Viewbox 
+                 Height="800"
+                 Width="800"
+                 Stretch="Uniform"
+                 StretchDirection="Both">
+        <Border Background="Purple">
+            <StackPanel HorizontalAlignment="Center"
+                        >
+                <TextBlock Text="You were just using  Active Window"
+                   FontSize="30" Margin="10 0"/>
+
+                <TextBox x:Name="whyTB"
+                    Text="" 
+                         Header="Why are you spending time on this?"
+                         AcceptsReturn="True"
+                         Background="Black"
+                         FontSize="22"
+                         Margin="10 0"
+                         TextChanged="whyTB_TextChanged"/>
+                <Button x:Name="submitButton"
+                    Content="Submit"
+                        HorizontalAlignment="Center"
+                        Click="Button_Click"
+                        FontSize="22"
+                        Margin="10"
+                        IsEnabled="False"
+                />
+            </StackPanel>
+        </Border>
+
+
+
+    </Viewbox>
 </winex:WindowEx>

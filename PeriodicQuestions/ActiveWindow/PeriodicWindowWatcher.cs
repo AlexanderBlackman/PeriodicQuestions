@@ -7,6 +7,7 @@ namespace PeriodicQuestions.ActiveWindow
     public class PeriodicWindowWatcher
     {
         private PeriodicTimer stateTimer;
+        private QuestionWindow newWindow;
 
 
 
@@ -25,6 +26,15 @@ namespace PeriodicQuestions.ActiveWindow
             while (await stateTimer.WaitForNextTickAsync())
             {
                 GetActiveWindow();
+
+
+                newWindow = new QuestionWindow();
+
+
+
+
+
+
             }
         }
 
